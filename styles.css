@@ -37,8 +37,18 @@ main > section {
 
 main > section > h2 {
     text-align: center;
+    padding-bottom: 1rem;
 }
 
-main > section > button {
-
+main > section > article {
+    display: grid;
+    padding-bottom: 1rem;
 }
+
+main > section > article > button {
+    width: 2rem;
+    height: 1rem;
+    justify-self: center;
+    cursor: pointer;
+}
+
