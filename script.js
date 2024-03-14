@@ -14,9 +14,8 @@ function createArticle(section) {
     articleParagraph.draggable = true;
 
     newArticle.appendChild(articleParagraph);
-    console.log(`Section : ${section} - fait`)
-
-}
+    console.log(`Section : ${section} - fait`);
+};
 
 // Todo button
 const btnToDo = document.querySelector('section:nth-of-type(1) button');
@@ -25,23 +24,32 @@ btnToDo.addEventListener('click', () => {
     createArticle('Doing');
     articleParagraph.style.background = '#7cc5ff';
     articleToDo.appendChild(newArticle);
-})
+});
+
 // Doing boutton
 const btnDoing = document.querySelector('section:nth-of-type(2) button');
 const articleDoing = document.querySelector('section:nth-of-type(2)');
 btnDoing.addEventListener('click', () => {
-    createArticle('Doing')
+    createArticle('Doing');
     articleParagraph.style.background = '#7cff9b';
     articleDoing.appendChild(newArticle);
-})
+});
+
 // Done Boutton
 const btnDone = document.querySelector('section:nth-of-type(3) button');
 const articleDone = document.querySelector('section:nth-of-type(3)');
 btnDone.addEventListener('click', () => {
-    createArticle('Done')
+    createArticle('Done');
     articleParagraph.style.background = '#ff937c';
     articleDone.appendChild(newArticle);
-})
+});
+
+for (article of newArticle) {
+    article.addEventListener('dragstart', (e) => {
+        let selected = e.target;
 
 
+    })
+}
 
+// On va passer sur des classes et des id car mon cerveau chauffe trop
