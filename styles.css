@@ -37,7 +37,7 @@ main > section {
 
 main > section > h2 {
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: 0.25rem;
 }
 
 main > section > article {
